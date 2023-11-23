@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task Schedular</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+       <div class="Task-Form">
+        <h1>Create a Task</h1>
+        <form class="form">
+            <label>Task Name : </label>
+            <input type="text" id="taskName" required><br><br>
+
+            <label>Task Date : </label>
+            <input type="date" id="taskDate" require><br><br>
+
+            <label>Notification Type : </label>
+            <select id="notificationType">
+                <option value="email">Email</option>
+                <option value="pop">Push Notification</option>
+            </select><br><br>
+            <button type="button" onclick="addTask()">Schedule Task</button>
+        </form>
+       </div>
+       <h3>Notification schedule</h3> 
+       <ul id="taskList"></ul>
+       <script src="script.js"></script>
+    </body>
+</html>
